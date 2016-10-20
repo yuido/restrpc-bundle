@@ -1,0 +1,66 @@
+{
+    "title": "params for doctrine query",
+    "type": "object",
+    "properties": {
+        "filters": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "property": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": ["property", "value"]
+
+            }
+        },
+        "order_by": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "property": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "enum": ["ASC", "DESC"]
+                    }
+                },
+                "required": ["property", "value"]
+
+            }
+
+        },
+        "joins": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "join": {
+                        "type": "string"
+                    },
+                    "property": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "string"
+                    }
+                },
+                "required": ["property", "value"]
+
+            }
+        },
+        "limit": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "offset": {
+            "type": "integer",
+            "minimum": 0
+        }
+    }
+}

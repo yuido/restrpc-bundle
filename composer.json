@@ -1,0 +1,21 @@
+{
+    "name": "yuido/restrpc-bundle",
+    "description": "A set of tools to make easier REST RPC based API's",
+    "keywords": ["rest","rpc", "rest-rpc", "api"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juanda Rodríguez",
+            "email": "juanda@yuido.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9",
+        "yuido/json-validator": "^4.0"
+    },
+    "autoload": {
+        "psr-4": { "Yuido\\RestRpcBundle\\": "" }
+    },
+    "minimum-stability": "dev"
+}
