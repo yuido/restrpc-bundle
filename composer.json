@@ -16,6 +16,5 @@
     },
     "autoload": {
         "psr-4": { "Yuido\\RestRpcBundle\\": "" }
-    },
-    "minimum-stability": "dev"
+    }
 }
