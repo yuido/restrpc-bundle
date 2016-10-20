@@ -16,8 +16,8 @@ services:
         arguments:
             - "@translator"
             - "@json_validator"
-            - "%json_schemas_dir%"
-            - "%debug%"
+            - "%yuido_rest_rpc.json_schemas_dir%"
+            - "%yuido_rest_rpc.debug%"
     
     schema_manager:
         class: Yuido\RestRpcBundle\SchemaManager
